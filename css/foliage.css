@@ -1,0 +1,125 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+
+}
+
+#app_container{
+
+}
+
+.fol-section {
+    margin-bottom: 1px;
+}
+
+.fol.big-title{
+    margin: 0px;
+    /* width: 100%; */
+    padding: 4px;
+    border: 3px solid gray;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    display:inline-block;
+    
+}
+
+.fol.big-title small{
+    display: inline-block;
+    margin-left: 4px;
+    background-color: gray;
+    padding: 4px;
+    border-radius: 2px;
+    color: white;
+}
+
+.fol-top{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.fol-thumbnail {
+    text-align: center;
+    /* border-right: 1px solid gray; */
+    /* border-left: 1px solid gray; */
+    margin-bottom: 4px;
+    /* margin-left: 1px; */
+    /* margin-right: 1px; */
+    padding-top:4px;
+}
+
+.fol-thumbnail .year-label{
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fol-thumbnail .year-label.highlight{
+}
+
+.fol-thumbnail img{
+    width: 175px;
+    height: 131px;
+}
+
+.fol-day-block{
+    width: 10px;
+    height: 30px;
+    /* border: 1px solid #ddd; */
+    float: left;
+    cursor: pointer;
+}
+
+.fol-year-label{
+    margin: 0px;
+    position:absolute;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 0px 0px 4px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.fol-day-block:hover{
+     /* border-top: 30px solid indianred; */
+}
+
+/* @media(min-width:800px){ */
+/*     .fol-year-timeline input[type='range']{ */
+/* 	display:none; */
+/*     } */
+/* } */
+
+/* .fol-year-timeline input[type='range']{ */
+/*     display: none; */
+/* } */
+
+/* .fol-year-timeline:nth-child(1) input[type='range']{ */
+/*     display:inline-block; */
+/* } */
+
+.fol-year-timeline{
+    margin-bottom: 1px;
+    background-color: gray;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.day-highlight {
+    background-color:indianred;
+    border-bottom: 20px solid red;
+}
+
+.fol-thumbnail{
+    float:left;
+    width: 25%;
+    overflow: hidden;
+}
+
+.clear-both{
+    clear:both;
+}
