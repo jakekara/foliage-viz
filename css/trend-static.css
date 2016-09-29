@@ -1,0 +1,141 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather';
+
+body.trend-static,.serif {
+    font-family: 'Merriweather', serif;
+    color: #222;
+    /* background-color: whitesmoke; */
+    /* background-color: beige; */
+}
+
+
+.trend-static h1,h2,h3,h4,h5,h6,h7,.sans{        
+    font-family: 'Lato', sans-serif;
+}
+.trend-static .masthead{
+    background-color: #222;
+}
+.trend-static .masthead img.site-logo{
+    cursor: pointer;
+    padding: 10px;
+    height: 50px;
+}
+.trend-static .masthead img.site-logo:hover {
+    background-color: #555;
+}
+
+.trend-static .social-box{
+    background-color: #222;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.trend-static .social-box a{
+    color: white;
+}
+
+.trend-static .social-box a:hover{
+    color: #999;
+}
+
+.trend-static .masthead .social-box{
+    font-size: 30px;
+    float: right;
+}
+
+.trend-static .clear-both:{
+    clear: both;
+}
+
+.trend-static h1.post-title{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+.trend-static .pub-date  {
+    font-size: 0.75em;
+    color: gray;
+    font-family: 'Lato', sans-serif;
+}
+
+.trend-static .byline {
+    color: #777;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.trend-static .post .post-body {
+    margin-top: 18px;
+}
+
+.trend-static .embed{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.trend-static img {
+    max-width: 100%;
+}
+
+.trend-static .right {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.trend-static .white{
+    background-color: white;
+}
+
+.trend-static .caption{
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #777;		     
+    font-family: 'Lato', sans-serif;
+}
+
+.trend-static .small{
+    width: 25%;
+    min-width: 130px;
+}
+
+.trend-static .circle{
+}
+
+.trend-static .border{
+    /* border: 2px solid lightgray; */
+}
+
+.fol-multiple img {
+}
+
+.fol-multiple label{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75em;
+}
+
+.fol-multiple.legend{
+    padding-top: 10px;
+}
+
+.fol-multiple label.date-range{
+    width: 100%;
+    text-align: center;
+}
+
+.fol-multiple .legend-item{
+    padding: 2px;
+    margin-right: 4px;
+    margin-bottom: 1px;
+    color: white;
+    /* box-shadow: 1px 1px 15px 0px gray; */
+    border-radius: 2px;
+    border: 1px solid #555;
+}
+
+.trend-static .sourceline{
+    clear: both;
+    font-size: 0.75em;
+    font-family: 'Lato', sans-serif;
+    color: #777;
+}

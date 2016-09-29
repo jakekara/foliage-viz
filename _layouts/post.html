@@ -1,0 +1,13 @@
+---
+layout: trend_static
+---
+
+<div class="post">
+  <h1 class="post-title">{{page.title}}<br><small>{{page.subhed}}</small></h1>
+  <h1 class="post-title"></h1>
+  <div class="post-info">
+    <div class="byline">by {{page.author}}</div>
+    <div class="pub-date">{{page.date}}</div>
+  </div>
+  <div class="post-body">{{content | markdownify}}</div>
+</div>

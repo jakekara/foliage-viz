@@ -1,0 +1,76 @@
+{% include base.html %}
+<!DOCTYPE HTML>
+<head>
+  <!-- Fallback loader -->
+  <!-- No time to fully implement CDN resources with local fallbacks, but that's the plan -->
+  <!-- <script src="bower_components/fallback/fallback.min.js"></script> -->
+  <!-- jQuery -->
+  <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script> -->
+  <!-- track ctmirror -->
+  <script src="{{base}}/js/track.js"></script>
+  
+  <title>{{page.title}}</title>
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <!-- Moment.js -->
+  <script src="{{base}}/js/moment.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!-- StateFace -->
+  <link rel="stylesheet" href="{{base}}/css/stateface/stateface.css">
+
+  <!-- Meta stuff -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Main app script -->
+  <link rel="stylesheet" href="{{base}}/css/trend-static.css">
+  <!-- <link rel="stylesheet" href="{{base}}/css/foliage.css"> -->
+</head>
+<body class="trend-static">
+  <div class="masthead">
+    <a href="//trendct.org">
+      <img alt="TrendCT.org - The story in numbers" class="site-logo" src="{{base}}/img/site/trend_inverse.png">
+    </a>
+    <div class="social-box">
+      <a href="https://www.facebook.com/sharer/sharer.php?">
+	<i class="fa fa-facebook-official" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="social-box">
+      <a class="twitter-share-button"
+	 href="https://twitter.com/intent/tweet?text={{page.title}} @trendct {{page.bitly}}"
+	 data-size="large">
+	<i class="fa fa-twitter-square" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="clear-both"></div>
+    
+  </div>
+  <div class="container">
+    {{content}}
+    <div id="disqus_thread"></div>
+    <!-- <script src="{{base}}/js/disqus.js"></script> -->
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</body>
+</html>
+<script>
+  (function() {
+  var disqus_config = function () {
+  this.page.url = "http://projects.ctmirror.org/content/trend/2016/10/foliage/"
+  this.page.identifier = "trend_2016_10_foliage"
+  };
+
+  var d = document, s = d.createElement('script');
+
+  s.src = '//trendct.disqus.com/embed.js';
+
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  
+</script>

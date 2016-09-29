@@ -1,7 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Lato';
+@import 'https://fonts.googleapis.com/css?family=Lato:400';
 
 body {
     font-family: 'Lato', sans-serif;
+    /* background-color: #bbb; */
+    /* background-color: whitesmoke; */
+    /* background-color: beige; */
 }
 
 h1,h2,h3,h4,h5,h6,h7{
@@ -19,10 +22,13 @@ h1,h2,h3,h4,h5,h6,h7{
 .fol.big-title{
     margin: 0px;
     /* width: 100%; */
-    padding: 4px;
-    border: 3px solid gray;
+    padding: 10px;
+    padding-bottom: 0px;
+    /* border: 3px solid gray; */
+    background-color: gray;
+    color: white;
     border-bottom: none;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
     display:inline-block;
     
 }
@@ -37,8 +43,6 @@ h1,h2,h3,h4,h5,h6,h7{
 }
 
 .fol-top{
-    background-color: black;
-    border-radius: 20px;
 }
 
 .fol-thumbnail {
@@ -81,6 +85,7 @@ h1,h2,h3,h4,h5,h6,h7{
     border-radius: 0px 0px 4px 0px;
     padding-left: 4px;
     padding-right: 4px;
+    box-shadow: 2px 2px 8px 0px black;
 }
 
 .fol-day-block:hover{
@@ -101,17 +106,22 @@ h1,h2,h3,h4,h5,h6,h7{
 /*     display:inline-block; */
 /* } */
 
+input[type='range']{
+    min-height: 30px;    
+}
+
 .fol-year-timeline{
     margin-bottom: 1px;
     background-color: gray;
     box-sizing: border-box;
-    border-radius: 8px;
+    /* border-radius: 4px; */
     overflow: hidden;
 }
 
 .day-highlight {
     background-color:indianred;
-    border-bottom: 20px solid red;
+    border-bottom: 30px solid red;
+    box-shadow: 10px 10px 10px 0px black;
 }
 
 .fol-thumbnail{
@@ -122,4 +132,10 @@ h1,h2,h3,h4,h5,h6,h7{
 
 .clear-both{
     clear:both;
+}
+
+.fol-byline, .fol-sourceline{
+    font-family: 'Lato', sans-serif;
+    color: #777;
+    font-size: 0.75em;
 }
