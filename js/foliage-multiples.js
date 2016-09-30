@@ -53,18 +53,43 @@ FOL.mult.legend = function(){
 		}
 	    }
 	});
-
-
     
     return detached;
 }
 
-FOL.mult.go = function(){
+FOL.mult.gif = function(container){
+    container.classed("fol-phases-gif", true);
+    container.append("img")
+	.attr("src","img/site/phases.gif")
+	.classed("fol-phases-gif", true)
+
+    container.append("div")
+	.classed("legend", true)
+	.html(FOL.mult.legend().html());
+}
+
+FOL.mult.draw = function(){
+
+    var rect = d3.select(FOL.mult.div).node().getBoundingClientRect();
+    console.log("small multiples rect", rect, rect.width);
+
+    d3.select(FOL.mult.div).html("");
+    
     // Add a container
     var container = d3.select(FOL.mult.div)
 	.append("div")
 	.classed("container", true);
 
+    // If it's a small screen, don't add the small multiples
+
+    if (rect.width < 400){
+	console.log(rect.width, "small");
+	FOL.mult.gif(container);
+	return;
+    }
+
+    console.log(rect.width, "large");
+    
     // Add each multple
     var mults = container.selectAll("div.fol-multiple")
 	.data(FOL.mult.phases)
@@ -74,7 +99,7 @@ FOL.mult.go = function(){
 	.classed("col-xs-4", true)
 	.classed("col-sm-3", true)
 	.classed("col-md-2", true)
-
+    
     mults.append("img")
 	.classed("border", true)
 	.attr("src", function(d){
@@ -82,15 +107,15 @@ FOL.mult.go = function(){
 		return FOL.mult.path + k + ".png";
 	    }
 	});
-
+    
     mults.append("label")
     	.classed("date-range", true)
 	.text(function(d){
-
+	    
 	    for (k in d){
 		return d[k];
 	    }
-	});
+	});	
 
     container.append("div")
 	.classed("legend", true)
@@ -104,13 +129,18 @@ FOL.mult.go = function(){
     var bottom = container.append("div")
 	.classed("row", true);
     
-    bottom.append("div")
-	.classed("clear-both", true);
+    // bottom.append("div")
+    // 	.classed("clear-both", true);
     
     // Add sourceline
     bottom.append("div")
 	.classed("sourceline", true)
 	.text("SOURCE: CT DEEP")
+}
+
+FOL.mult.go = function(){
+    FOL.mult.draw();
+    d3.select(window).on("resize", FOL.mult.draw);
 }
 
 FOL.mult.go();

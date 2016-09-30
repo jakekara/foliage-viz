@@ -109,7 +109,7 @@ body.trend-static,.serif {
 .fol-multiple img {
 }
 
-.fol-multiple label{
+.fol-multiple label, .fol-phases-gif label{
     font-family: 'Lato', sans-serif;
     font-size: 0.75em;
 }
@@ -123,7 +123,7 @@ body.trend-static,.serif {
     text-align: center;
 }
 
-.fol-multiple .legend-item{
+.legend-item{
     padding: 2px;
     margin-right: 4px;
     margin-bottom: 1px;
@@ -138,4 +138,8 @@ body.trend-static,.serif {
     font-size: 0.75em;
     font-family: 'Lato', sans-serif;
     color: #777;
+}
+
+.fol-phases-gif{
+    width: 100%;
 }
