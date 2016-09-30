@@ -331,20 +331,20 @@ FOL.layout = function(data, loc_id){
 	    // other_sliders.property("value",this.value);
 	});
 
-    d3.selectAll(".fol-day-block").on("mouseover", function(){
-	var loc_id = d3.select(this).attr("data-loc_id");
+    // d3.selectAll(".fol-day-block").on("mouseover", function(){
+    // 	var loc_id = d3.select(this).attr("data-loc_id");
 
 
-	var date = d3.select(this).attr("data-date");
-	var year = d3.select(this).attr("data-year");
-	var month = d3.select(this).attr("data-month");
-	var day = d3.select(this).attr("data-day");
+    // 	var date = d3.select(this).attr("data-date");
+    // 	var year = d3.select(this).attr("data-year");
+    // 	var month = d3.select(this).attr("data-month");
+    // 	var day = d3.select(this).attr("data-day");
 
-	FOL.load_throttle = new TRENDCT.helpers.throttle(FOL.load_date,
-							 [loc_id, month, day, year]);
-	// FOL.load_date(loc_id, month, day, year);
+    // 	FOL.load_throttle = new TRENDCT.helpers.throttle(FOL.load_date,
+    // 							 [loc_id, month, day, year]);
+    // 	// FOL.load_date(loc_id, month, day, year);
 	
-    });
+    // });
 
     // d3.selectAll(".fol-day-block")
     // 	.style("width", function(){
