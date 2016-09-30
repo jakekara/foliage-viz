@@ -71,7 +71,6 @@ FOL.mult.gif = function(container){
 FOL.mult.draw = function(){
 
     var rect = d3.select(FOL.mult.div).node().getBoundingClientRect();
-    console.log("small multiples rect", rect, rect.width);
 
     d3.select(FOL.mult.div).html("");
     
@@ -83,12 +82,10 @@ FOL.mult.draw = function(){
     // If it's a small screen, don't add the small multiples
 
     if (rect.width < 400){
-	console.log(rect.width, "small");
 	FOL.mult.gif(container);
 	return;
     }
 
-    console.log(rect.width, "large");
     
     // Add each multple
     var mults = container.selectAll("div.fol-multiple")

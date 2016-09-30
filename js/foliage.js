@@ -66,7 +66,7 @@ FOL.data = {};
 FOL.locations = {
     2319: "Talcott Mountain",
     2318: "Mohawk Mountain",
-    // 2320: "Criscuolo Park"
+    2320: "Criscuolo Park"
 }
 
 FOL.parse_date = function(d){
